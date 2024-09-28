@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+}
+
+.body {
+    background-color: blueviolet;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border: 3px solid rgb(167, 109, 221);
+    border-radius: 15px;
+}
+
+.screen {
+    background-color: rgb(167, 253, 253);
+    width: 560px;
+    height: 80px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    text-align: end;
+    margin-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(215, 192, 175);
+}
+
+button:active {
+    background-color: chocolate;
+}
+
+.number-buttons {
+    display: grid;
+    grid: auto / auto auto auto;
+    gap: 10px;
+}
+
+.number-buttons button {
+    height: 85px;
+    width: 150px;
+}
+
+.operator-buttons {
+    display: grid;
+    gap: 10px;
+    grid: auto / auto
+}
+
+.operator-buttons button {
+    height: 60px;
+    width: 100px;
+}
