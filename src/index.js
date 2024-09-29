@@ -162,7 +162,7 @@ const handleKeyPress = (event) => {
         document.querySelector("#clear").click()
     } else if (key === "=" || key === "Enter") {
         document.querySelector("#equals").click()
-    } else if (key === "+") {
+    } else if (key === "+" || key === "p" || key === "P") {
         document.querySelector("#plus").click()
     } else if (key === "-") {
         document.querySelector("#minus").click()
