@@ -164,11 +164,11 @@ const handleKeyPress = (event) => {
         document.querySelector("#equals").click()
     } else if (key === "+" || key === "p" || key === "P") {
         document.querySelector("#plus").click()
-    } else if (key === "-") {
+    } else if (key === "-" || key === "m" || key === "M") {
         document.querySelector("#minus").click()
     } else if (key === "*" || key === "x" || key === "X") {
         document.querySelector("#multiply").click()
-    } else if (key === "/") {
+    } else if (key === "/" || key === "d" || key === "D") {
         document.querySelector("#divide").click()
     } else if (key === ".") {
         document.querySelector("#point").click()
