@@ -149,3 +149,32 @@ document.querySelector("#point").addEventListener("click", handlePointClick) // 
 document.querySelector("#sign").addEventListener("click", handleSignClick) // Sign
 document.querySelector("#clear").addEventListener("click", handleClearClick) // Clear
 document.querySelector("#equals").addEventListener("click", handleEqualsClick) // Equals
+
+
+// Keyboard navigability stuff
+const handleKeyPress = (event) => {
+    const key = event.key
+    console.log(`${key} key pressed!`)
+
+    if (!isNaN(key)) {
+        document.querySelector(`button[value="${key}"]`).click()
+    } else if (key === "Escape" || key === "c" || key === "C") {
+        document.querySelector("#clear").click()
+    } else if (key === "=" || key === "Enter") {
+        document.querySelector("#equals").click()
+    } else if (key === "+") {
+        document.querySelector("#plus").click()
+    } else if (key === "-") {
+        document.querySelector("#minus").click()
+    } else if (key === "*" || key === "x" || key === "X") {
+        document.querySelector("#multiply").click()
+    } else if (key === "/") {
+        document.querySelector("#divide").click()
+    } else if (key === ".") {
+        document.querySelector("#point").click()
+    } else if (key === "s" || key === "S") {
+        document.querySelector("#sign").click()
+    }
+}
+
+document.addEventListener("keydown", handleKeyPress)

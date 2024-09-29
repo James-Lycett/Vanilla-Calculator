@@ -5,33 +5,50 @@
         <link href="/app/public/index.css" rel="stylesheet"/>
     </head>
     <body>
-        <div id="body" class="body">
-            <div id="screen" class="screen">
-                <div id="input" class="input">0</div>
+        <div class="layout">
+            <div id="body" class="body">
+                <div id="screen" class="screen">
+                    <div id="input" class="input">0</div>
+                </div>
+                <div id="buttons" class="buttons">
+                    <div id="number-buttons" class="number-buttons">
+                        <button id="seven" type="button" name="seven" value="7">7</button>
+                        <button id="eight" type="button" name="eight" value="8">8</button>
+                        <button id="nine" type="button" name="nine" value="9">9</button>
+                        <button id="four" type="button" name="four" value="4">4</button>
+                        <button id="five" type="button" name="five" value="5">5</button>
+                        <button id="six" type="button" name="six" value="6">6</button>
+                        <button id="one" type="button" name="one" value="1">1</button>
+                        <button id="two" type="button" name="two" value="2">2</button>
+                        <button id="three" type="button" name="three" value="3">3</button>
+                        <button id="zero" type="button" name="zero" value="0">0</button>
+                        <button id="point" type="button" name="point">.</button>
+                        <button id="sign" type="button" name="sign">+/-</button>
+                    </div>
+                    <div id="operator-buttons" class="operator-buttons">
+                        <button id="clear" type="button" name="clear" >C</button>
+                        <button id="plus" class="operator" type="button" name="plus">+</button>
+                        <button id="minus" class="operator" type="button" name="minus">-</button>
+                        <button id="multiply" class="operator" type="button" name="multiply">x</button>
+                        <button id="divide" class="operator" type="button" name="divide">/</button>
+                        <button id="equals" type="button" name="equals">=</button>
+                    </div>
+                </div>
             </div>
-            <div id="buttons" class="buttons">
-                <div id="number-buttons" class="number-buttons">
-                    <button id="seven" type="button" name="seven" value="7">7</button>
-                    <button id="eight" type="button" name="eight" value="8">8</button>
-                    <button id="nine" type="button" name="nine" value="9">9</button>
-                    <button id="four" type="button" name="four" value="4">4</button>
-                    <button id="five" type="button" name="five" value="5">5</button>
-                    <button id="six" type="button" name="six" value="6">6</button>
-                    <button id="one" type="button" name="one" value="1">1</button>
-                    <button id="two" type="button" name="two" value="2">2</button>
-                    <button id="three" type="button" name="three" value="3">3</button>
-                    <button id="zero" type="button" name="zero" value="0">0</button>
-                    <button id="point" type="button" name="point">.</button>
-                    <button id="sign" type="button" name="sign">+/-</button>
-                </div>
-                <div id="operator-buttons" class="operator-buttons">
-                    <button id="clear" type="button" name="clear" >C</button>
-                    <button id="plus" class="operator" type="button" name="plus">+</button>
-                    <button id="minus" class="operator" type="button" name="minus">-</button>
-                    <button id="multiply" class="operator" type="button" name="multiply">x</button>
-                    <button id="divide" class="operator" type="button" name="divide">/</button>
-                    <button id="equals" type="button" name="equals">=</button>
-                </div>
+            <div class="text">
+                <h1>DOM Calculator</h1>
+                <h2>Instructions</h2>
+                <p>Presumably you know how to use a calculator but did you know you can operate this bad boi with the keyboard? Here's how:</p>
+                <ul>
+                    <li>- Press number keys to input numbers</li>
+                    <li>- Press '+' for the plus key</li>
+                    <li>- Press '-' for the minus key</li>
+                    <li>- Press 'x' or '*' for the multiply key</li>
+                    <li>- Press '/' for the divide key</li>
+                    <li>- Press 'Enter' or '=' for the equals key</li>
+                    <li>- Press '.' for the point/decimal key</li>
+                    <li>- Press 'c' or 'esc' for the clear key</li>
+                </ul>
             </div>
         </div>
         <script src="/app/src/index.js"></script>

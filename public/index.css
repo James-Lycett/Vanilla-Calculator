@@ -2,12 +2,17 @@ body {
     background-color: black;
 }
 
+.layout {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .body {
     background-color: blueviolet;
     height: 500px;
     width: 600px;
-    margin: auto;
     margin-top: 20px;
+    margin-inline: 100px;
     padding: 20px;
     border: 3px solid rgb(167, 109, 221);
     border-radius: 15px;
@@ -69,4 +74,14 @@ button:active {
 .operator-buttons button {
     height: 60px;
     width: 100px;
+}
+
+.text {
+    text-wrap: wrap;
+    width: 400px;
+    color: rgb(246, 254, 254);
+}
+
+.text li {
+    list-style-type: none;
 }
